@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<meta name="description" content="">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	</head>
+	<body>
+
+<!--Sprite start-->
+		<svg style="display: none">
+			<symbol id="first-line" width="27px" height="27px" viewBox="0 0 27 27">
+				<path d="M13.9998 0.666992C14.7362 0.666992 15.3331 1.26395 15.3331 2.00032V26.0003C15.3331 26.7367 14.7362 27.3336 13.9998 27.3336C13.2634 27.3336 12.6665 26.7367 12.6665 26.0003V2.00032C12.6665 1.26395 13.2634 0.666992 13.9998 0.666992Z" fill="#6A6D9E"/>
+			</symbol>
+			<symbol id="second-line" width="27px" height="27px" viewBox="0 0 27 27">
+				<g>
+					<path d="M0.666504 13.9999C0.666504 13.2635 1.26346 12.6665 1.99983 12.6665H25.9998C26.7362 12.6665 27.3331 13.2635 27.3331 13.9999C27.3331 14.7363 26.7362 15.3332 25.9998 15.3332H1.99983C1.26346 15.3332 0.666504 14.7363 0.666504 13.9999Z" fill="#6A6D9E"/>
+				</g>
+			</symbol>
+		</svg>
+<!--Sprite end-->
+
+<!--Header start-->
+		<header class="header">
+			<div class="wrapper">
+				<div class="header__inner">
+					<a href="/" class="header__logo">
+						<img src="images/svg/draft-logo.svg" alt="Draft Logo" class="header__logo-icon">
+					</a>
+					<nav class="header__nav">
+						<ul class="header__list">
+							<li class="header__item">
+								<a href="#home" class="header__link">Home</a>
+							</li>
+							<li class="header__item">
+								<a href="#features" class="header__link">Features</a>
+							</li>
+							<li class="header__item">
+								<a href="#pricing" class="header__link">Pricing</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header__sign-up">
+						<button type="button" class="header__button">Sign up</button>
+					</div>
+				</div>
+			</div>
+		</header>
+<!--Header end-->
+
+
+<!--Main start   -->
+		<main class="main">
+
+<!--Intro start   -->
+			<div class="intro" id="home">
+				<div class="wrapper wrapper--full">
+					<img src="images/svg/intro-shape1.svg" alt="Shape 1" class="intro__shape intro__shape--first">
+					<img src="images/svg/intro-shape2.svg" alt="Shape 2" class="intro__shape intro__shape--second">
+					<img src="images/svg/intro-shape3.svg" alt="Shape 3" class="intro__shape intro__shape--third">
+					<img src="images/svg/intro-shape4.svg" alt="Shape 4" class="intro__shape intro__shape--fourth">
+						<div class="intro__inner">
+							<div class="intro__text">
+								<h1 class="intro__title">Smart Banking for freelancers</h1>
+								<p class="intro__description">Draft is a revolutionary mobile app built to help you manage your business easily and save you money.</p>
+								<button type="button" class="intro__button arrow__button">Register Now</button>
+							</div>
+							<div class="intro__screen">
+								<img src="images/intro-screen.jpg" alt="Screen" class="intro__screen-image">
+							</div>
+						</div>
+				</div>
+			</div>
+<!--Intro end-->
+
+<!--Card start   -->
+			<section class="card" id="features">
+				<div class="wrapper">
+					<div class="card__inner">
+						<div class="card__text">
+							<h2 class="card__title section__title">One card for all your payments</h2>
+							<p class="card__description section__description">Get 3% back on everything you buy with the Draft card. Register today and enjoy every aspect of your business.</p>
+						</div>
+						<div class="card__sample">
+							<img src="images/credit-card.png" alt="Credit Card" class="card__sample-image">
+						</div>
+					</div>
+				</div>
+			</section>
+<!--Card end-->
+
+<!--Finances start   -->
+			<section class="finances">
+				<div class="wrapper">
+					<div class="finances__inner">
+						<div class="finances__stats">
+							<div class="finances__balance">
+								<img src="images/balance.jpg" alt="Balance" class="finances__balance-image">
+							</div>
+							<div class="finances__transactions">
+								<img src="images/transactions.jpg" alt="Transactions" class="finances__transactions-image">
+							</div>
+							<div class="finances__chart">
+								<img src="images/chart.jpg" alt="Chart" class="finances__chart-image">
+							</div>
+						</div>
+						<div class="finances__text">
+							<h2 class="finances__title section__title">Manage your finances like a pro in no time</h2>
+							<p class="finances__description section__description">Width Draft, book keeping, banking, and invoices are all in one place. You will always know where you stand.</p>
+							<button type="button" class="finances__button arrow__button">Learn More</button>
+						</div>
+					</div>
+				</div>
+			</section>
+<!--Finances end   -->
+
+<!--Support start   -->
+			<div class="background__inner">
+				<section class="support">
+					<div class="wrapper">
+						<div class="support__inner">
+							<img src="images/svg/support-shape.svg" alt="Support Shape" class="support__shape support__shape--first">
+							<img src="images/svg/support-shape.svg" alt="Support Shape" class="support__shape support__shape--second">
+							<div class="support__text">
+								<h2 class="support__title section__title">We support you in 5 different languages</h2>
+								<p class="support__description section__description">Our support team is here to help you in 5 languages - English, French, Spanish, Polish, and German.</p>
+								<div class="support__avatars">
+									<img src="images/avatars.png" alt="Avatars" class="support__avatars-image">
+									<span class="support__avatars-count">+20</span>
+								</div>
+							</div>
+							<div class="support__chat">
+								<img src="images/chat.png" alt="Chat" class="support__chat-image">
+							</div>
+						</div>
+					</div>
+				</section>
+<!--Support end   -->
+
+<!--Tiers start   -->
+				<section class="tiers" id="pricing">
+					<div class="wrapper">
+						<div class="tiers__inner">
+							<div class="tiers__caption section__caption">
+								<h2 class="tiers__title caption__title">An exceptional service, <span class="tiers__title--part caption__title--part">at the right price</span></h2>
+								<h3 class="tiers__subtitle">Start with our free plan and switch to premium as you grow.</h3>
+								<div id="tier-titles" class="tiers__tier-titles">
+									<a href="#!" class="tiers__tier-title tiers__tier-title--mobile tiers__tier-title--mobile--active">Free</a>
+									<a href="#!" class="tiers__tier-title tiers__tier-title--mobile">Premium</a>
+								</div>
+							</div>
+							<div id="tiers" class="tiers__tiers">
+							<div class="tiers__tier tiers__tier--free tiers__tier--active">
+								<h4 class="tiers__tier-title tiers__tier-title--desktop">Free</h4>
+								<h5 class="tiers__tier-price">$0<span class="tiers__tier-price--part">/m</span></h5>
+								<p class="tiers__tier-description">Manage your business with a simple and efficient account</p>
+								<button type="button" class="tiers__tier-button">Get Started</button>
+								<div class="tiers__tier-cards">
+									<img src="images/svg/tiers-card1.svg" alt="Dark Card" class="tiers__tier-card tiers__tier-card--free tiers__tier-card--active">
+									<img src="images/svg/tiers-card2.svg" alt="Light Card" class="tiers__tier-card tiers__tier-card--free">
+								</div>
+								<div id="selectors-free" class="tiers__tier-selectors">
+									<a href="#!" class="tiers__tier-selector tiers__tier-selector--free">
+										<img src="images/svg/tiers-selector1.svg" class="tiers__tier-selector--icon tiers__tier-selector--free--icon tiers__tier-selector--icon--active"></img>
+									</a>
+									<a href="#!" class="tiers__tier-selector tiers__tier-selector--free">
+										<img src="images/svg/tiers-selector2.svg" class="tiers__tier-selector--icon tiers__tier-selector--free--icon"></img>
+									</a>
+								</div>
+								<div class="tiers__tier-options">
+									<ul class="tiers__tier-options-list">
+										<li class="tiers__tier-option">10 tier local transfers</li>
+										<li class="tiers__tier-option">Free ATM withdrawals in Dollar up to $250 per month</li>
+										<li class="tiers__tier-option">Free payments to other draft accounts</li>
+										<li class="tiers__tier-option">Prepaid debit cards</li>
+										<li class="tiers__tier-option tiers__tier-option--off">Priority 24/7 support</li>
+										<li class="tiers__tier-option tiers__tier-option--off">Exchange 24 currencies</li>
+										<li class="tiers__tier-option tiers__tier-option--off">Multi-user access</li>
+									</ul>
+								</div>
+							</div>
+							<div class="tiers__tier tiers__tier--premium">
+								<h4 class="tiers__tier-title tiers__tier-title--desktop">Premium</h4>
+								<h5 class="tiers__tier-price">$8<span class="tiers__tier-price--part">/m</span></h5>
+								<p class="tiers__tier-description">Priority support and multi-user access to maximize your productivity</p>
+								<button type="button" class="tiers__tier-button">Get Started</button>
+								<div class="tiers__tier-cards">
+									<img src="images/svg/tiers-card1.svg" alt="Dark Card" class="tiers__tier-card tiers__tier-card--premium">
+									<img src="images/svg/tiers-card2.svg" alt="Light Card" class="tiers__tier-card tiers__tier-card--premium tiers__tier-card--active">
+								</div>
+								<div id="selectors-premium" class="tiers__tier-selectors">
+									<a href="#!" class="tiers__tier-selector tiers__tier-selector--premium">
+										<img src="images/svg/tiers-selector1.svg" class="tiers__tier-selector--icon tiers__tier-selector--premium--icon"></img>
+									</a>
+									<a href="#!" class="tiers__tier-selector tiers__tier-selector--premium">
+										<img src="images/svg/tiers-selector2.svg" class="tiers__tier-selector--icon tiers__tier-selector--premium--icon tiers__tier-selector--icon--active"></img>
+									</a>
+								</div>
+								<div class="tiers__tier-options">
+									<ul class="tiers__tier-options-list">
+										<li class="tiers__tier-option">10 tier local transfers</li>
+										<li class="tiers__tier-option">Free ATM withdrawals in Dollar up to $250 per month</li>
+										<li class="tiers__tier-option">Free payments to other draft accounts</li>
+										<li class="tiers__tier-option">Prepaid debit cards</li>
+										<li class="tiers__tier-option">Priority 24/7 support</li>
+										<li class="tiers__tier-option">Exchange 24 currencies</li>
+										<li class="tiers__tier-option">Multi-user access</li>
+									</ul>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+<!--Tiers end   -->
+
+<!--FAQ start   -->
+			<section class="faq">
+				<div class="wrapper">
+					<div class="faq__inner">
+						<div class="faq__caption section__caption">
+							<h2 class="faq__title caption__title">Frequently <span class="faq__title--part caption__title--part">asked questions</span></h2>
+							<h3 class="faq__subtitle caption__subtitle">If you are not sure whether Draft is suitable for you or not, do not worry. We are here to explain everything you might want to know.</h3>
+						</div>
+						<div id="questions" class="faq__questions">
+							<div class="faq__questions-block">
+								<div class="faq__questions-item">
+									<h4 class="faq__questions-question">What is the difference between Draft and a traditional bank account?</h4>
+									<div class="faq__questions-button">
+										<svg class="faq__questions-button-ico">
+											<use class="faq__questions-button--first-line" xlink:href="#first-line"></use>
+											<use class="faq__questions-button--second-line" xlink:href="#second-line"></use>
+										</svg>
+									</div>
+								</div>
+									<p class="faq__questions-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. At volutpat, nec ut sed amet id. Ante dapibus pulvinar sodales semper senectus dolor, nunc. Amet maecenas nisl, elit nunc, lacus. Aenean malesuada lectus nulla ipsum dolor.</p>
+							</div>
+							<div class="faq__questions-block">
+								<div class="faq__questions-item">
+									<h4 class="faq__questions-question">Who can open a Draft account</h4>
+									<div class="faq__questions-button">
+										<svg class="faq__questions-button-ico">
+											<use class="faq__questions-button--first-line" xlink:href="#first-line"></use>
+											<use class="faq__questions-button--second-line" xlink:href="#second-line"></use>
+										</svg>
+									</div>
+								</div>
+									<p class="faq__questions-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. At volutpat, nec ut sed amet id. Ante dapibus pulvinar sodales semper senectus dolor, nunc. Amet maecenas nisl, elit nunc, lacus. Aenean malesuada lectus nulla ipsum dolor.</p>
+							</div>
+							<div class="faq__questions-block">
+								<div class="faq__questions-item">
+									<h4 class="faq__questions-question">What if I withdraw money abroad</h4>
+									<div class="faq__questions-button">
+										<svg class="faq__questions-button-ico">
+											<use class="faq__questions-button--first-line" xlink:href="#first-line"></use>
+											<use class="faq__questions-button--second-line" xlink:href="#second-line"></use>
+										</svg>
+									</div>
+								</div>
+									<p class="faq__questions-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. At volutpat, nec ut sed amet id. Ante dapibus pulvinar sodales semper senectus dolor, nunc. Amet maecenas nisl, elit nunc, lacus. Aenean malesuada lectus nulla ipsum dolor.</p>
+							</div>
+							<div class="faq__questions-block">
+								<div class="faq__questions-item">
+									<h4 class="faq__questions-question">Can I cancel my subscription or switch to another plan anytime?</h4>
+									<div class="faq__questions-button">
+										<svg class="faq__questions-button-ico">
+											<use class="faq__questions-button--first-line" xlink:href="#first-line"></use>
+											<use class="faq__questions-button--second-line" xlink:href="#second-line"></use>
+										</svg>
+									</div>
+								</div>
+									<p class="faq__questions-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. At volutpat, nec ut sed amet id. Ante dapibus pulvinar sodales semper senectus dolor, nunc. Amet maecenas nisl, elit nunc, lacus. Aenean malesuada lectus nulla ipsum dolor.</p>
+							</div>
+							<div class="faq__questions-block">
+								<div class="faq__questions-item">
+									<h4 class="faq__questions-question">What happens if I withdraw more than $250?</h4>
+									<div class="faq__questions-button">
+										<svg class="faq__questions-button-ico">
+											<use class="faq__questions-button--first-line" xlink:href="#first-line"></use>
+											<use class="faq__questions-button--second-line" xlink:href="#second-line"></use>
+										</svg>
+									</div>
+								</div>
+									<p class="faq__questions-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. At volutpat, nec ut sed amet id. Ante dapibus pulvinar sodales semper senectus dolor, nunc. Amet maecenas nisl, elit nunc, lacus. Aenean malesuada lectus nulla ipsum dolor.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+<!--FAQ end   -->
+
+		</main>
+<!--Main end-->
+
+<!--Footer start-->
+		<footer class="footer">
+			<div class="wrapper">
+				<div class="footer__inner">
+					<div class="footer__left">
+							<a href="/" class="footer__logo">
+								<img src="images/svg/draft-logo.svg" alt="Draft Logo" class="footer__logo-icon">
+							</a>
+						<p class="footer__copyrights">Copyrights ©2021 Draft LLC.<br>All rights reserved</p>
+					</div>
+					<div class="footer__right">
+						<nav class="footer__nav">
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a href="#!" class="footer__link">Team</a>
+								</li>
+								<li class="footer__item">
+									<a href="#!" class="footer__link">Press</a>
+								</li>
+								<li class="footer__item">
+									<a href="#!" class="footer__link">Fees</a>
+								</li>
+								</ul>
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a href="#!" class="footer__link">Services</a>
+								</li>
+								<li class="footer__item">
+									<a href="#!" class="footer__link">Projects</a>
+								</li>
+								<li class="footer__item">
+									<a href="#!" class="footer__link">Affiliate</a>
+								</li>
+							</ul>
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a href="#!" class="footer__link">Terms of use</a>
+								</li>
+								<li class="footer__item">
+									<a href="#!" class="footer__link">Privacy Policy</a>
+								</li>
+								<li class="footer__item">
+									<a href="#!" class="footer__link">Contact us</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</footer>
+<!--Footer end-->
+
+		<script type="module" src="./js/main.js"></script>
+		<script src="./js/jquery.matchHeight.js"></script>
+		<!-- <script src="./js/resizeAnimationStopper.js"></script> -->
+	</body>
+</html>

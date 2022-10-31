@@ -1,0 +1,75 @@
+//main: ../style.less
+
+.card {
+	margin-bottom: 260px;
+}
+
+.card__inner {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.card__text {
+	width: 50%;
+	padding-right: 121px;
+}
+
+.card__sample {
+	width: 50%;
+}
+
+.card__sample-image {
+	border-radius: 24px;
+	box-shadow: 0 50px 100px rgba(22, 25, 79, 0.15);
+}
+
+@media @w1140 {
+	.card {
+		margin-bottom: 150px;
+	}
+}
+
+@media @w1024 {
+	.card__text {
+		padding-right: 82px;
+	}
+}
+
+@media @w788 {
+	.card__text {
+		padding-right: 20px;
+	}
+}
+
+@media @w714 {
+	.card__title {
+		margin-bottom: 35px;
+	}
+}
+
+@media @w626 {
+	.card__text {
+		display: grid;
+		place-items: center;
+		width: 100%;
+		padding: 0;
+		margin-bottom: 50px;
+	}
+
+	.card__sample {
+		display: grid;
+		place-items: center;
+		width: 100%;
+	}
+}
+
+@media @w419 {
+	.card {
+		margin-bottom: 100px;
+	}
+
+	.card__text {
+		margin-bottom: 40px;
+	}
+}

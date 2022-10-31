@@ -1,0 +1,129 @@
+//compress: true, sourceMap: true
+
+@import "fonts";
+@import "vars";
+@import "reset";
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body, html {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 1.5;
+	color: @chetwode-blue;
+}
+
+body {
+	position: relative;
+	z-index: 0;
+	background-color: @alice-blue;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.wrapper {
+	max-width: 968px;
+	padding: 0 10px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.arrow__button {
+	font-size: .75rem;
+	color: @white;
+	padding: 21px 81px 21px 43px;
+	border: 0;
+	border-radius: 20px;
+	transition: all .15s linear;
+	background: url("@{svg}arrow-right.svg") @paua no-repeat 82% center;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background: url("@{svg}arrow-right.svg") lighten(@paua, 7%) no-repeat 85% center;
+	}
+}
+
+.section__title {
+	font-weight: 700;
+	font-size: 2.5rem;
+	line-height: 1.2;
+	color: @slate-blue;
+	margin-bottom: 50px;
+}
+
+.section__caption {
+	text-align: center;
+}
+
+.caption__title {
+	font-weight: 700;
+	font-size: 2rem;
+	color: @slate-blue;
+	margin-bottom: 20px;
+
+	&--part {
+		color: @wild-watermelon;
+	}
+}
+
+.caption__subtitle {
+	font-size: 1.2rem;
+}
+
+.background__inner {
+	background: url("@{svg}tiers-bg.svg") no-repeat bottom/cover;
+}
+
+.resize-animation-stopper *, .resize-animation-stopper {
+	animation: none !important;
+	transition: none !important;
+}
+
+@media @w1230 {
+	.wrapper {
+		position: static;
+	}
+}
+
+@media @w928 {
+	.section__title {
+		font-size: 2rem;
+	}
+
+ body {
+		font-size: 18px;
+	}
+
+	html {
+		font-size: 18px;
+	}
+}
+
+@media @w788 {
+	.arrow__button {
+		padding: 15px 70px 15px 30px;
+	}
+}
+// Blocks
+@import "blocks/header";
+@import "blocks/intro";
+@import "blocks/card";
+@import "blocks/finances";
+@import "blocks/support";
+@import "blocks/tiers";
+@import "blocks/faq";
+@import "blocks/footer";

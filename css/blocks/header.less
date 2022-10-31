@@ -1,0 +1,90 @@
+//main: ../style.less
+
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-top: 62px;
+	z-index: 999;
+}
+
+.header__inner {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header__logo {
+	display: inline-block;
+}
+
+.header__logo-icon {
+	width: 48px;
+	height: 53px;
+}
+
+.header__list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.header__item {
+	margin-right: 70px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.header__link {
+	font-size: 0.85rem;
+	text-decoration: none;
+	color: @white;
+	transition: all .15s linear;
+
+	&:hover,
+	&:focus,
+	&:active {
+		opacity: .75;
+	}
+}
+
+.header__button {
+	font-family: 'Roboto';
+	font-size: .85rem;
+	color: @white;
+	padding: 15px 55px;
+	background: @wild-watermelon;
+	border: 0;
+	border-radius: 20px;
+	transition: all .15s linear;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background: darken(@wild-watermelon, 15%);
+	}
+}
+
+@media @w578 {
+	.header__sign-up {
+		display: none;
+	}
+
+	.header__inner {
+		justify-content: space-around;
+	}
+}
+
+@media @w419 {
+	.header__item {
+		margin-right: 30px;
+	}
+
+	.intro__inner {
+		padding-bottom: 250px;
+	}
+
+}

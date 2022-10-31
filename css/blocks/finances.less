@@ -1,0 +1,74 @@
+//main: ../style.less
+
+.finances__inner {
+	display: flex;
+	width: 100%;
+}
+
+.finances__stats {
+	width: 50%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	padding-right: 9px;
+}
+
+.finances__balance, .finances__transactions {
+	grid-column: span 1;
+}
+.finances__balance-image, .finances__transactions-image, .finances__chart-image {
+	border-radius: 50px;
+	box-shadow: 0 25px 50px rgba(22, 25, 79, 0.05);
+}
+
+.finances__chart {
+	grid-column: span 2;
+}
+
+.finances__text {
+	width: 50%;
+	padding-left: 103px;
+}
+
+.finances__title {
+	margin-bottom: 40px;
+}
+
+.finances__description {
+	margin-bottom: 40px;
+}
+
+@media @w928 {
+	.finances__text {
+		padding-left: 60px;
+	}
+}
+
+@media @w788 {
+	.finances__text {
+		padding-left: 40px;
+	}
+}
+
+@media @w626 {
+	.finances__inner {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.finances__stats {
+		width: 80%;
+		place-items: center;
+		padding: 0;
+	}
+
+	.finances__text {
+		width: 80%;
+		display: grid;
+		place-items: center;
+		padding: 0;
+		text-align: center;
+		order: -1;
+		margin-bottom: 65px;
+	}
+}

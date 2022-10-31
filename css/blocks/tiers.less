@@ -1,0 +1,292 @@
+//main: ../style.less
+
+.tiers {
+	padding-bottom: 260px;
+	overflow: hidden;
+}
+
+.tiers__inner {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 120px 0;
+	place-items: center;
+	position: relative;
+}
+
+.tiers__caption {
+	grid-column: span 2;
+	padding: 0 112px 0;
+}
+
+.tiers__subtitle {
+	color: @paua;
+}
+
+.tiers__tiers {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 0 88px;
+	transition: transform 700ms ease;
+
+	&.style {
+		transform: translateX(0);
+	}
+}
+
+.tiers__tier {
+	display: grid;
+	grid-column: span 1;
+	place-items: center;
+	background-color: @white;
+	border-radius: 50px;
+	box-shadow: 0 25px 50px rgba(22, 25, 79, 0.05);
+	padding: 0 10px;
+	transition: transform 700ms ease;
+}
+
+.tiers__tier-title {
+	font-weight: 700;
+	font-size: 2rem;
+	color: @paua;
+	margin: 60px 0 40px;
+}
+
+.tiers__tier-titles {
+	display: none;
+}
+
+.tiers__tier-price {
+	font-size: 3rem;
+	color: @paua;
+	margin-bottom: 30px;
+
+	&--part {
+		font-size: 2rem;
+	}
+}
+
+.tiers__tier-description {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.tiers__tier-button {
+	padding: 16px 47px;
+	font-size: 0.75rem;
+	color: @paua;
+	border-radius: 20px;
+	border: 1.5px solid @paua;
+	background-color: @white;
+	margin-bottom: 40px;
+	transition: all .15s linear;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: @paua;
+		color: @white;
+	}
+}
+
+.tiers__tier-cards {
+	display: flex;
+	margin-bottom: 20px;
+	position: relative;
+	box-shadow: 0 32.19px 64.38px rgba(22, 25, 79, 0.15);
+	border-radius: 15.45px;
+}
+
+.tiers__tier-card {
+	opacity: 0;
+	transition: opacity 700ms ease;
+
+	&:last-child {
+		position: absolute;
+	}
+
+	&--active {
+		opacity: 1;
+	}
+}
+
+.tiers__tier-selectors {
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.tiers__tier-selector--button {
+	border: 0;
+}
+
+.tiers__tier-selector {
+	display: flex;
+	margin-right: 10px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.tiers__tier-selector--icon {
+	border: 1px solid hsla(0, 0, 0, 0);
+	border-radius: 56px;
+	padding: 2px;
+	transition: border 700ms ease;
+
+	&--active {
+		border: 1px solid @paua;
+	}
+}
+
+.tiers__tier-options {
+	margin-bottom: 40px;
+}
+
+.tiers__tier-options-list {
+	padding: 0 25px 0 55px;
+}
+
+.tiers__tier-option {
+	margin-bottom: 20px;
+	padding-left: 34px;
+	background: url("@{svg}check.svg") no-repeat 0 2px;
+	color: @paua;
+
+	&--off {
+		color: @silver;
+		background: url("@{svg}check-off.svg") no-repeat 0 2px;
+	}
+}
+
+@media @w1140 {
+	.tiers {
+		padding-bottom: 150px;
+	}
+}
+
+@media @w928 {
+	.tiers__tier-options-list {
+		padding: 0 10px 0 35px;
+	}
+}
+
+@media @w788 {
+	.tiers__inner {
+		gap: 65px 0;
+	}
+
+	.tiers__tiers {
+		gap: 0 65px;
+	}
+
+	.tiers__tier-title {
+		margin: 45px 0 25px;
+	}
+
+	.tiers__tier-options-list {
+		padding: 0 10px 0 10px;
+	}
+}
+
+@media @w714 {
+	.tiers__tier-selector--icon {
+		max-width: 8.7vw;
+	}
+}
+
+@media @w626m {
+	.tiers__tiers {
+		transform: translateX(0) !important;
+	}
+}
+
+@media @w626 {
+	.tiers__tiers {
+		&--show-free {
+			transform: translateX(0);
+		}
+
+		&--show-premium {
+			transform: translateX(-100vw);
+		}
+	}
+
+	.tiers__tier {
+		grid-column: span 2;
+		max-width: 430px;
+
+		&--premium {
+			transform: translateX(100vw);
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	.tiers__caption {
+		padding: 0 40px 0;
+	}
+
+	.tiers__tier-selector--icon {
+		max-width: 100%;
+	}
+
+	.tiers__tier-titles {
+		display: flex;
+		justify-content: center;
+	}
+
+	.tiers__tier-title--mobile {
+		border-radius: 20px;
+    border: 2.5px solid #16194F;
+		padding: 16px 28px;
+		font-size: 1.4rem;
+		transition: all .15s linear;
+		margin: 45px 0 0;
+		text-decoration: none;
+
+		&--active {
+			background-color: @paua;
+			color: @white;
+			font-size: 1.4rem;
+	}
+
+		&:first-child {
+			padding: 16px 55px;
+			margin-right: 50px;
+		}
+	}
+}
+
+@media @w419 {
+	.tiers {
+		padding-bottom: 100px;
+	}
+
+	.tiers__inner {
+		gap: 40px 0;
+	}
+
+	.tiers__caption {
+		padding: 0;
+	}
+
+	.tiers__tier-button {
+		padding: 14px 33px;
+	}
+
+	.tiers__tier-title--mobile {
+		padding: 10px 14px;
+		font-size: 1.1rem;
+
+		&:first-child {
+			padding: 10px 35px;
+		}
+	}
+}
